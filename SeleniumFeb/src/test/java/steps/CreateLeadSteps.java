@@ -13,9 +13,8 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class CreateLeadSteps {
-
-	ChromeDriver driver;
-
+		public ChromeDriver driver;
+	
 	@Given("Launch the Browser")
 	public void launchBrowser() {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
@@ -63,7 +62,7 @@ public class CreateLeadSteps {
 		driver.findElementByLinkText("Leads").click();
 	}
 
-	@Given("Click on CreateLead link")
+	@Given("Click on CreateLead link1")
 	public void clickCreateLd() {
 		driver.findElementByLinkText("Create Lead").click();
 	}
@@ -83,7 +82,7 @@ public class CreateLeadSteps {
 		driver.findElementById("createLeadForm_lastName").sendKeys(lName);
 	}
 
-	@And("Select Industry")
+	@And("Select Industry1")
 	public void selectIndustry() {
 		int count = 0;
 		WebElement dropDown = driver.findElementById("createLeadForm_industryEnumId");
