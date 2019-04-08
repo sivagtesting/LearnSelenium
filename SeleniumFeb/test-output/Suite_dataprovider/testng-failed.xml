@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite_dataprovider]">
+  <parameter name="passWord" value="crmsfa"/>
+  <parameter name="userName" value="DemoSalesManager"/>
+  <parameter name="url" value="http://leaftaps.com/opentaps/control/main"/>
+  <test thread-count="5" name="Test_dataprovider(failed)">
+    <classes>
+      <class name="week5.day2.DeleteLead">
+        <methods>
+          <include name="closeApp"/>
+          <include name="login"/>
+          <include name="deleteLeadTestCase"/>
+          <include name="setData"/>
+        </methods>
+      </class> <!-- week5.day2.DeleteLead -->
+    </classes>
+  </test> <!-- Test_dataprovider(failed) -->
+</suite> <!-- Failed suite [Suite_dataprovider] -->

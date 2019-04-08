@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite_Parallel]" parallel="classes">
+  <test thread-count="5" name="RunInParallel(failed)" parallel="classes">
+    <classes>
+      <class name="week5.day1.testNGLearning.CreateLead">
+        <methods>
+          <include name="createLeadTestcase"/>
+        </methods>
+      </class> <!-- week5.day1.testNGLearning.CreateLead -->
+      <class name="week5.day1.testNGLearning.EditLead">
+        <methods>
+          <include name="editLeadTestCase"/>
+        </methods>
+      </class> <!-- week5.day1.testNGLearning.EditLead -->
+    </classes>
+  </test> <!-- RunInParallel(failed) -->
+</suite> <!-- Failed suite [Suite_Parallel] -->

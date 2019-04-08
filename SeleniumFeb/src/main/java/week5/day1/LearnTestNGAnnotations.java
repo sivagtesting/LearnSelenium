@@ -48,7 +48,7 @@ public class LearnTestNGAnnotations {
 
   @BeforeSuite
   public void beforeSuite() {
-	  System.out.println("@BeforeSuite");
+	  System.out.println("@BeforeSuite1");
   }
 
   @AfterSuite

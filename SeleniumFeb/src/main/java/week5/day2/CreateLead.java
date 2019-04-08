@@ -48,6 +48,7 @@ public class CreateLead extends BaseUtils {
 			driver.findElementById("createLeadForm_firstName").sendKeys(fName);
 			driver.findElementById("createLeadForm_lastName").sendKeys(lName);
 			WebElement dropDown = driver.findElementById("createLeadForm_industryEnumId");
+			
 			Select dd1 = new Select(dropDown);
 			List<WebElement> options = dd1.getOptions();
 			for (int j = 0; j < options.size(); j++) {

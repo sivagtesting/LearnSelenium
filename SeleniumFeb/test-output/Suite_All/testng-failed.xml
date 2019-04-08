@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite_All]" parallel="classes">
+  <parameter name="passWord" value="crmsfa"/>
+  <parameter name="userName" value="DemoSalesManager"/>
+  <parameter name="url" value="http://leaftaps.com/opentaps/control/main"/>
+  <test thread-count="5" name="Test_All(failed)" parallel="classes">
+    <classes>
+      <class name="week5.day2.DuplicateLead">
+        <methods>
+          <include name="closeApp"/>
+          <include name="login"/>
+          <include name="duplicateLeadTestCase"/>
+        </methods>
+      </class> <!-- week5.day2.DuplicateLead -->
+    </classes>
+  </test> <!-- Test_All(failed) -->
+</suite> <!-- Failed suite [Suite_All] -->

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite_Param]" parallel="classes">
+  <parameter name="passWord" value="crmsfa"/>
+  <parameter name="userName" value="DemoSalesManager"/>
+  <parameter name="url" value="http://leaftaps.com/opentaps/"/>
+  <test thread-count="3" name="Test_Param(failed)" parallel="classes">
+    <classes>
+      <class name="week5.day2.CreateLead">
+        <methods>
+          <include name="closeApp"/>
+          <include name="login"/>
+          <include name="createLeadTestcase"/>
+        </methods>
+      </class> <!-- week5.day2.CreateLead -->
+      <class name="week5.day2.EditLead">
+        <methods>
+          <include name="closeApp"/>
+          <include name="login"/>
+          <include name="editLeadTestCase"/>
+        </methods>
+      </class> <!-- week5.day2.EditLead -->
+      <class name="week5.day2.DuplicateLead">
+        <methods>
+          <include name="closeApp"/>
+          <include name="login"/>
+          <include name="duplicateLeadTestCase"/>
+        </methods>
+      </class> <!-- week5.day2.DuplicateLead -->
+      <class name="week5.day2.DeleteLead">
+        <methods>
+          <include name="closeApp"/>
+          <include name="login"/>
+          <include name="deleteLeadTestCase"/>
+        </methods>
+      </class> <!-- week5.day2.DeleteLead -->
+    </classes>
+  </test> <!-- Test_Param(failed) -->
+</suite> <!-- Failed suite [Suite_Param] -->

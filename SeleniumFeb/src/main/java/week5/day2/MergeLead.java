@@ -2,6 +2,7 @@ package week5.day2;
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -15,7 +16,7 @@ public class MergeLead extends BaseUtils {
 	// 1. Switching to new windows
 	// 2. Alert Handling
 	// 3. Taking Screenshot
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void mergeLeadTestCase() throws InterruptedException, IOException {
 		
 		/*System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
@@ -84,9 +85,9 @@ public class MergeLead extends BaseUtils {
 		String errMsg = driver.findElementByClassName("x-paging-info").getText();
 
 		// code for screenshot
-
+		Timestamp time = new Timestamp(System.currentTimeMillis());
 		File src = driver.getScreenshotAs(OutputType.FILE);
-		File dest = new File("./snap/ss1.jpeg");
+		File dest = new File("./snap/"+time.getTime()+".jpg");
 		FileUtils.copyFile(src, dest);
 
 		if (errMsg.contains("No records to display")) {

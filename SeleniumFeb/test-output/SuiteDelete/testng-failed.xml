@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteDelete]">
+  <test thread-count="5" name="TestDelete(failed)">
+    <classes>
+      <class name="week5.day2.DeleteLead">
+        <methods>
+          <include name="closeApp"/>
+          <include name="login"/>
+          <include name="deleteLeadTestCase"/>
+          <include name="setData"/>
+        </methods>
+      </class> <!-- week5.day2.DeleteLead -->
+    </classes>
+  </test> <!-- TestDelete(failed) -->
+</suite> <!-- Failed suite [SuiteDelete] -->
